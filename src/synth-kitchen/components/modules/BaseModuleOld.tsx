@@ -6,6 +6,7 @@ import { Delay } from './Delay';
 import { Filter } from './Filter';
 import { MidiInput } from './MidiInput';
 import { Oscillator } from './Oscillator';
+import { WeavesOscillator } from './WeavesOscillator';
 import { Sequencer } from './Sequencer';
 import { MidiOscillator } from './MidiOscillator';
 import { ModuleType } from '../../state/patch';
@@ -86,6 +87,8 @@ export class BaseModuleOld extends React.Component<IModuleProps, IModuleState> {
 										return <Filter {...this.props} />;
 									case 'OSCILLATOR':
 										return <Oscillator {...this.props} />;
+									case 'WEAVES_OSCILLATOR':
+										return <WeavesOscillator {...this.props} />;
 									case 'SEQUENCER':
 										return <Sequencer {...this.props} />;
 									case 'MIDI_DEVICE':
