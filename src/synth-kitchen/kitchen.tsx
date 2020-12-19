@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './routes/home';
 import { FourOhFour } from './routes/four-oh-four';
 import { PatchEditor } from './routes/patch-editor';
-import { NewPatch } from './new-patch';
+import { NewPatch } from './new patch/new-patch';
 
 export const Kitchen: React.FunctionComponent = () => {
 	return (
